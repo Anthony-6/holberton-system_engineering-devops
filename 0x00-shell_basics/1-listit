@@ -1,2 +1,2 @@
 #!/bin/bash
-sed pwd
+ls
