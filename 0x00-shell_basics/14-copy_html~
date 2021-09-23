@@ -1,2 +1,2 @@
 #!/bin/bash
-cp "$(ls -t *.html/.)" /..
+cp -u *.html . ..
