@@ -1,2 +1,2 @@
 #!/bin/bash
-chgrp 653 hello
+chmod +rwx hello
