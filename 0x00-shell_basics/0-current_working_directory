@@ -1,2 +1,9 @@
+<<<<<<< HEAD
+#!bin/bash
+$ ./0-current_working_directory
+/0x00-shell_basics
+$
+=======
 #!/bin/bash
 pwd
+>>>>>>> 9179b82bdb496e3e9b98fe0472611dd398292287
