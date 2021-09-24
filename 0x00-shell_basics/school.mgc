@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -la 0 SCH00L School
+ls -la School SCH00L 0
