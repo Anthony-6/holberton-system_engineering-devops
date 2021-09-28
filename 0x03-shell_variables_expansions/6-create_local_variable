@@ -1,2 +1,2 @@
 #!/bin/bash
-var [BEST[SCHOOL]]
+foo () { Name="BEST" ; Value="School" }
