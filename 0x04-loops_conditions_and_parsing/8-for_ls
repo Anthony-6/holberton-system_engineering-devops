@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script display the current directory item in list format
+for i in *; do
+    echo "$i" | cut -d'-' -f2
+done
