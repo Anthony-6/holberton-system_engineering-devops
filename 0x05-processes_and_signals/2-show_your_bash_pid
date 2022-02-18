@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script displays a list of currently running processes
+# shellcheck disable=SC2009
+# The 'f' option tells ps to display a tree view of parent to child processes:
+# The 'a' option tells ps to display the processes of all users. Only the processes 
+# -that not associated with a terminal and processes of group leaders are not shown.
+# The 'u' stands for a user-oriented format that provides detailed information about the processes.
+# The x option instructs ps to list the processes without a controlling terminal.
+# The grep function is here to select only file that contains the word "bash" in their name
+ps -faux | grep "bash"
