@@ -1,9 +1,9 @@
-#0x09. Web infrastructure design
+# 0x09. Web infrastructure design
 
-##Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+## Learning Objectives At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-##General
+## General
+
 * You must be able to draw a diagram covering the web stack you built with the sysadmin/devops track projects
 
 * You must be able to explain what each component is doing
@@ -12,8 +12,8 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 * Know all the mentioned acronyms: LAMP, SPOF, QPS
 
-##Requirements
-###General
+## Requirements
+### General
 
 * A README.md file, at the root of the folder of the project, is mandatory
 
@@ -39,4 +39,4 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 * Similarly in a job interview, you should answer what the interviewer asked for, be careful about being too verbose - always ask the interviewer if going into details is necessary - speaking too much can play against you
 
-* In this project, again, avoid going in details if not asked |
+* In this project, again, avoid going in details if not asked 
