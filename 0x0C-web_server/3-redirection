@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# install nginx and create redirection page
+apt-get update
+apt-get -y upgrade
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+echo 'Holberton School' > /var/www/html/index.nginx-debian.html
+sed -i "/list 80 default_server;/a rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4" /etc/nginx/sites-available/default
+service nginx start
