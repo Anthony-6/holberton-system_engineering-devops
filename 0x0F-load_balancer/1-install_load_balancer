@@ -4,10 +4,10 @@ sudo apt-get update
 sudo apt-get -y install haproxy
 echo "frontend apache_front
         bind *:80
-        default_backend    apache_backend_servers
+        default_backend    anthony_backend
         mode               http"
-  
-echo "backend apache_backend_servers                                                                                                                     
+
+echo "backend anthony_backend
         balance            roundrobin
         server             3588-web-01 35.237.143.24:80 check
         server             3588-web-02 34.73.58.201:80 check"
