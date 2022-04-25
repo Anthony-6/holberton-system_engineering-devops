@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # install and configure a load balancer
+sudo apt-get update
+sudo apt-get -y install haproxy
 echo "frontend apache_front
         bind *:80
         default_backend    apache_backend_servers
