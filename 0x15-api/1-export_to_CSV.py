@@ -17,7 +17,7 @@ if __name__ == "__main__":
     filename = "{}.csv".format(sys.argv[1])
 
     with open(filename, mode="w") as myfile:
-        writer = csv.writer(myfile, delimiter=",", quotechar="'",
+        writer = csv.writer(myfile, delimiter=",", quotechar='"',
                             quoting=csv.QUOTE_ALL, lineterminator="\n")
         for t in todolist.json():
             if t.get("userId") == int(userId):
