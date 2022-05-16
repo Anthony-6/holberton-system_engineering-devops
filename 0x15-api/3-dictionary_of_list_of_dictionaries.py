@@ -16,7 +16,7 @@ if __name__ == "__main__":
     for u in user.json():
         for t in todolist.json():
             if t.get("userId") == u.get("id"):
-                tasktodict = {"username": u.get("username"),
+                tasktodict = {"username": u.json().get("username"),
                               "task": t.get("title"),
                               "completed": t.get("completed")}
                 tasksL.append(tasktodict)
