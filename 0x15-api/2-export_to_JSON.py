@@ -1,16 +1,19 @@
 #!/usr/bin/python3
-''' Python script that export employee data information in json file '''
-if __name__ == "__main__":
+"""
+Python script that export employee data information in json file
+"""
 
-    import requests
-    import sys
-    import json
+
+import json
+import requests
+import sys
+if __name__ == "__main__":
 
     userId = sys.argv[1]
     user = requests.get("https://jsonplaceholder.typicode.com/users/{}"
                         .format(userId))
-    todolist = requests.get(f'https://jsonplaceholder.typicode.com/todos')
-    name = user.json().get('username')
+    todolist = requests.get("https://jsonplaceholder.typicode.com/todos")
+    name = user.json().get("username")
     filename = "{}.json".format(sys.argv[1])
     tasks = []
     tasksD = {}
