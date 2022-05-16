@@ -17,9 +17,9 @@ if __name__ == "__main__":
     for u in user.json():
         for t in todolist.json():
             if t.get("userId") == u.get("id"):
-                tasktodict = {"task": t.get("title"),
-                              "completed": t.get("completed"),
-                              "username": u.get("username")}
+                tasktodict = {"username": t.get("username"),
+                              "task": t.get("title"),
+                              "completed": u.get("completed")}
                 tasks.append(tasktodict)
         tasksD[u.get("id")] = tasks
     with open(filename, mode="w") as myfile:
