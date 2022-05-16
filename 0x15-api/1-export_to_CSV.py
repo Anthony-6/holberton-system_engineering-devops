@@ -21,5 +21,5 @@ if __name__ == "__main__":
                             quoting=csv.QUOTE_ALL)
         for t in todolist.json():
             if t.get("userId") == int(userId):
-                writer.writerow([userId, name, t.get("completed"),
+                writer.writerow([userId, name, str(t.get("completed")),
                                  t.get("title")])
