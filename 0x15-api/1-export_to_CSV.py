@@ -16,9 +16,9 @@ if __name__ == "__main__":
     name = user.json().get("name")
     filename = "{}.csv".format(sys.argv[1])
 
-    with open(filename, mode="w", encoding="UTF8") as myfile:
+    with open(filename, mode="w") as myfile:
         writer = csv.writer(myfile, delimiter=",", quotechar="'",
-                            quoting=csv.QUOTE_ALL)
+                            quoting=csv.QUOTE_ALL, lineterminator="\n")
         for t in todolist.json():
             if t.get("userId") == int(userId):
                 writer.writerow([userId, name, str(t.get("completed")),
