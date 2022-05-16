@@ -13,7 +13,7 @@ if __name__ == "__main__":
     user = requests.get("https://jsonplaceholder.typicode.com/users/{}"
                         .format(userId))
     todolist = requests.get("https://jsonplaceholder.typicode.com/todos")
-    name = user.json().get("name")
+    name = user.json().get("username")
     filename = "{}.csv".format(sys.argv[1])
 
     with open(filename, mode="w") as myfile:
