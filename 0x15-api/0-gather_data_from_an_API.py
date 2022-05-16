@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 ''' Python script that return information about employee TODO list '''
-if __name__ == "__main__":
 
-    import requests
-    import sys
+import requests
+import sys
+
+if __name__ == "__main__":
 
     userId = sys.argv[1]
     user = requests.get(f'https://jsonplaceholder.typicode.com/users/{userId}')
