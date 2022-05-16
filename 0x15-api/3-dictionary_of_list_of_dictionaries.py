@@ -10,8 +10,7 @@ if __name__ == "__main__":
 
     user = requests.get("https://jsonplaceholder.typicode.com/users")
     todolist = requests.get("https://jsonplaceholder.typicode.com/todos")
-    filename = "todo_all_employees.json"
-    tasks = []
+    tasksL = []
     tasksD = {}
 
     for u in user.json():
@@ -20,7 +19,7 @@ if __name__ == "__main__":
                 tasktodict = {"username": u.get("username"),
                               "task": t.get("title"),
                               "completed": t.get("completed")}
-                tasks.append(tasktodict)
-        tasksD[u.get("id")] = tasks
-    with open(filename, mode="w") as myfile:
+                tasksL.append(tasktodict)
+        tasksD[u.get("id")] = tasksL
+    with open("todo_all_employees.json", mode="w") as myfile:
         json.dump(tasksD, myfile)
