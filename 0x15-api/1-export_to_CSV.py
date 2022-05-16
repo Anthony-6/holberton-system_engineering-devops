@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-''' Python script that export employee data information in csv file '''
+"""
+Python script that export employee data information in csv file
+"""
+
+import requests
+import sys
+import csv
 if __name__ == "__main__":
-
-    import requests
-    import sys
-    import csv
-
     userId = sys.argv[1]
     user = requests.get(f'https://jsonplaceholder.typicode.com/users/{userId}')
     todolist = requests.get(f'https://jsonplaceholder.typicode.com/todos')
