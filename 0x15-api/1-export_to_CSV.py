@@ -8,7 +8,8 @@ import sys
 import csv
 if __name__ == "__main__":
     userId = sys.argv[1]
-    user = requests.get("https://jsonplaceholder.typicode.com/users/{}".format(userId))
+    user = requests.get("https://jsonplaceholder.typicode.com/users/{}"
+                        .format(userId))
     todolist = requests.get("https://jsonplaceholder.typicode.com/todos")
     name = user.json().get("name")
     filename = "{}.csv".format(sys.argv[1])
