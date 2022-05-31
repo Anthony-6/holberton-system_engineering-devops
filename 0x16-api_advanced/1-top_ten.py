@@ -13,7 +13,7 @@ def top_ten(subreddit):
                        headers={"User-Agent": "anthony_6_"},
                        allow_redirects=False)
     if req.status_code >= 300:
-        return "None"
+        return None
     else:
         for information in req.json().get("data").get("children"):
             print(information.get("data").get("title"))
