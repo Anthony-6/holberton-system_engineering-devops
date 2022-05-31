@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""function that return the top 10 post from a subreddit"""
 
 
 import requests
