@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Python script to retrieve the number of subscriber from an subreddit"""
 
 import requests
 
